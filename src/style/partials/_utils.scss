@@ -13,24 +13,6 @@
     }
 }
 
-//
-@mixin desktop {
-    @include respond-to(desktop) {
-        @content
-            }
-    .old-ie & {
-        @content
-            }
-}
-
-// Background mixin
-@mixin background {
-    background: {
-        position: center center;
-        size: cover;
-    }
-}
-
 // Utility classes
 .clearfix:after {
     content: "";
@@ -39,12 +21,14 @@
     margin: auto;
 }
 .container {
-    width: 320px;
+    width: 1140px;
     margin: 0 auto;
-    @include respond-to(tablet) {
-        width: 768px;
-    }
-    @include desktop {
-        width: 960px;
-    }
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    // @include respond-to(tablet) {
+    //     width: 768px;
+    // }
+    // @include respond-to(mobile) {
+    //     width: 320px;
+    // }
 }

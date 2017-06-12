@@ -1,2 +1,126 @@
 @import "_variables";
 @import "_utils";
+
+.header .container,
+.navbar .container {
+    height: 100%;
+}
+.header {
+    height: 60px;
+    background-color: #F1F0EE;
+    font-size: 14px;
+}
+.inner--flex {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header__lang {
+    display: flex;
+    align-items: center;
+    border-right: 2px solid #C3C6C8;
+    margin-right: 21px;
+}
+
+.lang__flag {
+    width: 28px;
+    height: 20px;
+    margin-right: 11px;
+    background-image: url(../img/icon_language_ua.svg);
+}
+.lang__language {
+    margin-right: 3px;
+}
+.lang__choose {
+    width: 9.37px;
+    height: 5.41px;
+    background-image: url(../img/ic-dropdown.svg);
+    margin-right: 14.63px;
+}
+.header__phone {
+    margin-right: 21px;
+}
+.header__buttons {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+.header__buttons--reg {
+    width: 110px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #11B598;
+    color: #fff;
+    border-radius: 3px;
+    margin-left: 31px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    height: 71px;
+    background-color: #fff;
+}
+.header__logo--text {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.header__nav {
+    display: flex;
+    margin-left: auto;
+}
+.nav__item {
+    margin-left: 41px;
+}
+
+.main {
+    height: 472px;
+    background-image: url(../img/cover-img-header.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.main__header {
+    text-transform: uppercase;
+}
+.main__header,
+.main__subheader {
+    color: #fff;
+    font-size: 34px;
+    text-align: center;
+    padding-top: 123px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.main__subheader {
+    padding-top: 0;
+}
+.main__buttons {
+    display: flex;
+    margin-top: 53px;;
+}
+.buttons__common {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 335px;
+    height: 68px;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.main__button--left {
+    margin-left: 195px;
+    background-color: #23B498;
+}
+.main__button--right {
+    margin-right: 195px;
+    margin-left: auto;
+    background-color: #F1C40F;
+}
