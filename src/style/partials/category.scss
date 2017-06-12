@@ -1,0 +1,62 @@
+@import "_variables";
+@import "_utils";
+
+.category {
+    height: 338px;
+}
+.category .container {
+    height: 100%;
+}
+.category__title {
+    padding-top: 78px;
+    font-size: 36px;
+    text-align: center;
+    // border-bottom: 1px dashed #000;
+}
+
+.category__choose {
+    display: flex;
+    margin-top: 45px;
+    justify-content: space-between;
+}
+.choose__common {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+.choose__1 {
+    width: 165px;
+    background-image: url(../img/btn-category-1-normal.png);
+    background-position: center center;
+    background-size: cover;
+}
+.choose__2 {
+    width: 263px;
+    background-image: url(../img/btn-category-2-normal.png);
+    background-position: center center;
+    background-size: cover;
+}
+.choose__3 {
+    width: 165px;
+    background-image: url(../img/Rectangle.png);
+    background-position: center center;
+    background-size: cover;
+}
+.choose__4 {
+    width: 263px;
+    background-image: url(../img/btn-category-4-normal.png);
+    background-position: center center;
+    background-size: cover;
+}
+.choose__5 {
+    width: 165px;
+    background-image: url(../img/btn-more-normal.png);
+    background-position: center center;
+    background-size: cover;
+    color: #000;
+}
