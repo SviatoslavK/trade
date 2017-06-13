@@ -107,3 +107,15 @@
     height: 10px;
     background-image: url(../img/ic-arrow-forth-normal.svg);
 }
+[data-status="cancel"] {
+    color: #E74C3C;
+}
+[data-status="success"] {
+    color: #27AE60;
+}
+[data-status="info"] {
+    color: #3498DB;
+}
+[data-status="refinement"] {
+    color: #E67E22;
+}
