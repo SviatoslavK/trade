@@ -1,5 +1,50 @@
 <div class="filter">
     <div class="container">
-        
+        <div class="main__inputfield">
+            <input type="text" class="inputfield__input" placeholder="Ключове слово, назва, або номер закупівлі, назва, або код ЕДРПОУ компанії">
+            <div class="inputfield__btn">Пошук</div>
+        </div>
+        <div class="inputfield__show">Згорнути розширений пошук <span class="inputfield__arrow"></span></div>
+        <div class="filter__dropdown">
+            <div class="choosen--filters">
+                <!--<div class="choosen__bl">Dnepr</div>-->
+            </div>
+            <div class="dropdown__inputsblocks">
+                <div class="dropdown__inputblock--1">
+                    <input type="text" class="dropdown__input dropdown__input--1" placeholder="Замовник" name="customer">
+                    <div class="input__wrapper">
+                        <input type="text" class="dropdown__input dropdown__input--2" placeholder="Місто, або регіон" name="city">
+                        <span class="add--icon"></span>
+                    </div>
+                    <input type="text" class="dropdown__input dropdown__input--3">
+                    <div class="input__wrapper">
+                        <input type="text" class="dropdown__input dropdown__input--4" placeholder="Бюджет закупівлі" name="budget">
+                        <span class="add--icon"></span>
+                    </div>
+                </div>
+                <div class="dropdown__inputblock--2">
+                    <input type="text" class="dropdown__input dropdown__input--1">
+                    <div class="input__wrapper">
+                        <input type="text" class="dropdown__input dropdown__input--2" placeholder="Код, або назва CPV" name="code">
+                        <span class="add--icon"></span>
+                    </div>
+                    <div class="input__wrapper">
+                        <input type="text" class="dropdown__input dropdown__input--3" placeholder="Важливі дати" name="date">
+                        <span class="add--icon"></span>
+                    </div>
+                    <div class="dropdown__checkblock">
+                        <input type="checkbox" id="participants">
+                        <label for="participants">Беру участь</label>
+                        <input type="checkbox" id="choosen">
+                        <label for="choosen">Обрані</label>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown__buttons">
+                <div class="dropdown__button dropdown__button--1">Застосувати фільтри</div>
+                <div class="dropdown__button dropdown__button--2">Зберегти пошук</div>
+                <div class="dropdown__button dropdown__button--3">Скинути фільтри</div>
+            </div>
+        </div>
     </div>
 </div>
