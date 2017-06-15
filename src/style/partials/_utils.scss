@@ -3,16 +3,18 @@
 // Media-queries mixin. Mobile first method
 @mixin respond-to($media) {
     @if $media == mobile {
-        @media (max-width: $tablet - 1) { @content; }
+        @media (min-width: 480px) and (max-width: 767px){ @content; }
     }
     @else if $media == tablet {
-        @media (min-width: $tablet) { @content; }
+        @media (min-width: 768px) and (max-width: 1139px) { @content; }
     }
     @else if $media == desktop {
         @media (min-width: $desktop) { @content; }
     }
 }
-
+* {
+    transition: all 0.5s;
+}
 // Utility classes
 .clearfix:after {
     content: "";
@@ -25,10 +27,14 @@
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    // @include respond-to(tablet) {
-    //     width: 768px;
-    // }
-    // @include respond-to(mobile) {
-    //     width: 320px;
-    // }
+     @include respond-to(tablet) {
+         width: 768px;
+         padding-left: 10px;
+         padding-right: 10px;
+     }
+     @include respond-to(mobile) {
+         width: 480px;
+         padding-left: 2px;
+         padding-right: 2px;
+     }
 }

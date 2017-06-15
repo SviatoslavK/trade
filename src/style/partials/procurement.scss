@@ -8,6 +8,13 @@
     font-size: 36px;
     margin-top: 78px;
     margin-bottom: 47px;
+    @include respond-to(tablet) {
+         font-size: 34px;
+     }
+     @include respond-to(mobile) {
+        font-size: 30px;
+        text-align: center;
+     }
 }
 .procurements__card {
     display: flex;
@@ -15,6 +22,9 @@
     border-bottom: 1px solid #9D9D9D;
     padding-bottom: 27px;
     margin-bottom: 27px;
+    @include respond-to(mobile) {
+        flex-wrap: wrap;
+     }
 }
 .procurement__block {
     display: flex;
@@ -22,8 +32,37 @@
     font-size: 16px;
     // width: 25%;
 }
+.procurement__block--1 {
+    @include respond-to(mobile) {
+        width: 49%;
+     }
+}
+.procurement__block--3 {
+    @include respond-to(mobile) {
+        margin-top: 20px;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        -ms-align-items: center;
+        align-items: center;
+     }
+}
+.procurement__block--2 {
+    @include respond-to(tablet) {
+        padding-left: 5px;
+        padding-right: 5px; 
+     }
+     @include respond-to(mobile) {
+       width: 49%;
+     }
+}
 .procurement__id {
     font-size: 24px;
+    line-height: 23px;
+    @include respond-to(tablet) {
+        font-size: 20px;
+     }
 }
 .procurement__company {
     margin-top: 15px;
@@ -31,10 +70,16 @@
 }
 .procurement__status {
     margin-top: auto;
+    @include respond-to(mobile) {
+        margin-top: 15px;
+     }
 }
 .procurement__type {
     font-size: 20px;
     line-height: 23px;
+    @include respond-to(tablet) {
+        font-size: 18px;
+     }
 }
 .procurement__name {
     font-weight: 300;
@@ -44,14 +89,25 @@
 }
 .procurement__price {
     font-size: 24px;
+    line-height: 23px;
+    @include respond-to(tablet) {
+        font-size: 20px;
+     }
 }
 .procurement__subprice {
     margin-top: 15px;
+    @include respond-to(mobile) {
+        margin-top: 0;
+     }
 }
 .procurement__date {
     margin-top: 15px;
     font-weight: 300;
     color: #9D9D9D;
+    line-height: 20px;
+    @include respond-to(mobile) {
+        margin-top: 0;
+     }
 }
 .procurement__button {
     display: flex;
@@ -61,6 +117,10 @@
     margin-top: 22px;
     border: 1px solid #9D9D9D;
     border-radius: 3px;
+    @include respond-to(mobile) {
+       margin-left: auto;
+       margin-top: 15px;
+     }
 }
 .procurement__button--star {
     height: 19px;
