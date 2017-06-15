@@ -9,6 +9,9 @@
      @include respond-to(mobile) {
         height: 380px;
      }
+     @include respond-to(small) {
+        height: 380px;
+     }
 }
 .category .container {
     height: 100%;
@@ -24,6 +27,10 @@
      @include respond-to(mobile) {
         padding-top: 48px;
      }
+     @include respond-to(small) {
+        padding-top: 48px;
+        font-size: 34px;
+     }
 }
 
 .category__choose {
@@ -31,6 +38,9 @@
     margin-top: 45px;
     justify-content: space-between;
     @include respond-to(mobile) {
+        flex-wrap: wrap;
+     }
+      @include respond-to(small) {
         flex-wrap: wrap;
      }
 }
@@ -50,6 +60,10 @@
       @include respond-to(mobile) {
         height: 80px;
      }
+      @include respond-to(small) {
+        height: 80px;
+        font-size: 18px;
+     }
 }
 .choose__1 {
     width: 165px;
@@ -60,6 +74,10 @@
          width: 15%;
      }
      @include respond-to(mobile) {
+        order: 3;
+        width: 32%;
+     }
+      @include respond-to(small) {
         order: 3;
         width: 32%;
      }
@@ -77,6 +95,11 @@
         width: 49%;
         margin-bottom: 10px;
      }
+     @include respond-to(small) {
+        order: 1;
+        width: 49%;
+        margin-bottom: 10px;
+     }
 }
 .choose__3 {
     width: 165px;
@@ -87,6 +110,10 @@
          width: 15%;
      }
      @include respond-to(mobile) {
+        order: 4;
+        width: 32%;
+     }
+     @include respond-to(small) {
         order: 4;
         width: 32%;
      }
@@ -103,6 +130,10 @@
         order: 2;
         width: 49%;
      }
+     @include respond-to(small) {
+        order: 2;
+        width: 49%;
+     }
 }
 .choose__5 {
     width: 165px;
@@ -114,6 +145,10 @@
          width: 15%;
      }
      @include respond-to(mobile) {
+        order: 5;
+        width: 32%;
+     }
+     @include respond-to(small) {
         order: 5;
         width: 32%;
      }

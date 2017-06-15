@@ -16,6 +16,15 @@
         -ms-align-items: center;
         align-items: center;
      }
+     @include respond-to(small) {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+     }
 }
 .inputfield__input {
     height: 64px;
@@ -41,6 +50,12 @@
         padding-left: 5px;
         margin-right: 0;    
      }
+     @include respond-to(small) {
+        height: 44px;
+        font-size: 14px;
+        padding-left: 5px;
+        margin-right: 0;    
+     }
 }
 .inputfield__btn {
     width: 140px;
@@ -57,6 +72,12 @@
         width: 100%;
         font-size: 16px;
      }
+     @include respond-to(small) {
+        height: 44px;
+        margin-top: 10px;
+        width: 100%;
+        font-size: 16px;
+     }
 }
 .inputfield__show {
     display: flex;
@@ -68,6 +89,9 @@
     font-size: 18px;
     font-weight: 300;
     @include respond-to(mobile) {
+        font-size: 16px;
+     }
+      @include respond-to(small) {
         font-size: 16px;
      }
     
@@ -105,6 +129,13 @@
         -o-flex-direction: column;
         flex-direction: column;
      }
+     @include respond-to(small) {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+     }
 }
 .dropdown__input {
     display: flex;
@@ -120,6 +151,11 @@
          width: 355px;
      }
       @include respond-to(mobile) {
+        width: 100%;
+        height: 44px;
+        margin-bottom: 15px;
+     }
+     @include respond-to(small) {
         width: 100%;
         height: 44px;
         margin-bottom: 15px;
@@ -140,6 +176,9 @@
     padding-bottom: 30px;
     border-top: 1px solid #9D9D9D;
      @include respond-to(mobile) {
+        flex-wrap: wrap;
+     }
+     @include respond-to(small) {
         flex-wrap: wrap;
      }
 }
@@ -166,9 +205,19 @@
         width: 49%;
         margin-right: 2%;
      }
+      @include respond-to(small) {
+        order: 1;
+        width: 49%;
+        margin-right: 2%;
+     }
 }
 .dropdown__button--2 {
     @include respond-to(mobile) {
+        order: 3;
+        margin-top: 10px;
+        width: 100%;
+     }
+     @include respond-to(small) {
         order: 3;
         margin-top: 10px;
         width: 100%;
@@ -177,6 +226,11 @@
 .dropdown__button--3 {
     margin-left: auto;
     @include respond-to(mobile) {
+        order: 2;
+        width: 49%;
+        margin-left: 0;
+     }
+     @include respond-to(small) {
         order: 2;
         width: 49%;
         margin-left: 0;

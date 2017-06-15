@@ -1,6 +1,6 @@
 @import "_variables";
 
-// Media-queries mixin. Mobile first method
+// Media-queries mixin. Mobile desktop method
 @mixin respond-to($media) {
     @if $media == mobile {
         @media (min-width: 480px) and (max-width: 767px){ @content; }
@@ -8,8 +8,8 @@
     @else if $media == tablet {
         @media (min-width: 768px) and (max-width: 1139px) { @content; }
     }
-    @else if $media == desktop {
-        @media (min-width: $desktop) { @content; }
+    @else if $media == small {
+        @media (min-width: 320px) and (max-width: 479px) { @content; }
     }
 }
 * {
@@ -36,5 +36,10 @@
          width: 480px;
          padding-left: 2px;
          padding-right: 2px;
+     }
+      @include respond-to(small) {
+          width: 320px;
+          padding-left: 2px;
+          padding-right: 2px;
      }
 }

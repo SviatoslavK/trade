@@ -9,6 +9,9 @@
     height: 60px;
     background-color: #F1F0EE;
     font-size: 14px;
+    @include respond-to(small) {
+        height: 100px;
+     }
 }
 .inner--flex {
     display: flex;
@@ -23,6 +26,12 @@
     margin-right: 21px;
     @include respond-to(mobile) {
          margin-right: 11px;
+     }
+}
+.header--flex {
+     @include respond-to(small) {
+         flex-wrap: wrap;
+         justify-content: center;
      }
 }
 
@@ -56,6 +65,13 @@
          -o-flex-direction: column;
          flex-direction: column;
      }
+     @include respond-to(small) {
+         -webkit-flex-direction: column;
+         -moz-flex-direction: column;
+         -ms-flex-direction: column;
+         -o-flex-direction: column;
+         flex-direction: column;
+     }
 }
 .header__email {
     padding-bottom: 2px;
@@ -70,6 +86,9 @@
     display: flex;
     margin-left: auto;
     align-items: center;
+    @include respond-to(small) {
+         margin-left: 0;
+     }
 }
 .header__buttons--reg {
     width: 110px;
@@ -114,9 +133,9 @@
 .header__nav {
     display: flex;
     margin-left: auto;
-    /*@include respond-to(mobile) {
+    @include respond-to(small) {
          display: none;
-     }*/
+     }
      @include respond-to(mobile) {
          margin-left: 0;
      }
@@ -130,6 +149,7 @@
          margin-left: 10px;
          font-size: 15px;
      }
+     
 }
 
 .main {
@@ -154,6 +174,10 @@
          padding-top: 75px;
          font-size: 32px;
      }
+     @include respond-to(small) {
+         padding-top: 60px;
+         font-size: 32px;
+     }
 }
 .main__subheader {
     padding-top: 0;
@@ -165,6 +189,16 @@
          justify-content: space-around;
      }
      @include respond-to(mobile) {
+         -webkit-flex-direction: column;
+         -moz-flex-direction: column;
+         -ms-flex-direction: column;
+         -o-flex-direction: column;
+         flex-direction: column;
+         margin-top: 28px;
+         -ms-align-items: center;
+         align-items: center;
+     }
+     @include respond-to(small) {
          -webkit-flex-direction: column;
          -moz-flex-direction: column;
          -ms-flex-direction: column;
@@ -196,6 +230,9 @@
      @include respond-to(mobile) {
          margin-left: 0;
      }
+     @include respond-to(small) {
+         margin-left: 0;
+     }
 }
 .main__button--right {
     margin-right: 195px;
@@ -206,6 +243,11 @@
         margin-right: 0;
      }
      @include respond-to(mobile) {
+         margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px;
+     }
+     @include respond-to(small) {
          margin-left: 0;
         margin-right: 0;
         margin-top: 10px;

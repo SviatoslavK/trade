@@ -10,6 +10,9 @@
     @include respond-to(mobile) {
         height: 480px;
      }
+     @include respond-to(small) {
+        height: 720px;
+     }
 }
 .footer .container {
     height: 100%;
@@ -22,6 +25,13 @@
      @include respond-to(mobile) {
         flex-wrap: wrap;
      }
+     @include respond-to(small) {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+     }
 }
 .footer__title {
     font-size: 26px;
@@ -33,12 +43,21 @@
     @include respond-to(tablet) {
         font-size: 24px;
      }
+     @include respond-to(small) {
+        font-size: 24px;
+     }
 }
 .footer__contacts {
     width: 250px;
     line-height: 20px;
     @include respond-to(mobile) {
         order: 3;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;    
+     }
+     @include respond-to(small) {
         display: flex;
         width: 100%;
         flex-wrap: wrap;
@@ -62,6 +81,10 @@
         width: 49%;
         margin-left: 0;
      }
+     @include respond-to(small) {
+        width: 100%;
+        margin-left: 0;
+     }
 }
 .footer__nav--2 {
     padding-right: 20px;
@@ -71,6 +94,10 @@
         order: 2;
         width: 49%;
      }
+     @include respond-to(small) {
+        margin: 0;
+        width: 100%;
+     }
 }
 .footer__item {
     margin-bottom: 19px;
@@ -79,6 +106,9 @@
     margin-top: 25px;
     display: flex;
      @include respond-to(mobile) {
+        justify-content: center;
+     }
+     @include respond-to(small) {
         justify-content: center;
      }
 }
@@ -115,6 +145,9 @@
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
+    @include respond-to(small) {
+        height: 110px;
+     }
 }
 .copyright .container {
     display: flex;
@@ -124,6 +157,7 @@
 .copyright__text {
     text-align: center;
     padding-right: 76px;
+    
 }
 .copyright__up {
     position: absolute;
