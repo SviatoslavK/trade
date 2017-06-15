@@ -115,10 +115,20 @@
          -o-flex-direction: column;
          flex-direction: column;
      }
+     @include respond-to(small) {
+         -webkit-flex-direction: column;
+         -moz-flex-direction: column;
+         -ms-flex-direction: column;
+         -o-flex-direction: column;
+         flex-direction: column;
+     }
 }
 .navbar {
     height: 71px;
     background-color: #fff;
+    @include respond-to(small) {
+         height: 90px;
+     }
 }
 .header__logo--text {
     font-size: 20px;
@@ -129,15 +139,23 @@
          padding-top: 10px;
          margin-bottom: 10px;
      }
+     @include respond-to(small) {
+         padding-top: 10px;
+         margin-bottom: 10px;
+         font-size: 22px;
+     }
 }
 .header__nav {
     display: flex;
     margin-left: auto;
     @include respond-to(small) {
-         display: none;
+         margin-left: 0;
+         flex-wrap: wrap;
+         justify-content: center;
      }
      @include respond-to(mobile) {
          margin-left: 0;
+         
      }
 }
 .nav__item {
@@ -148,6 +166,11 @@
      @include respond-to(mobile) {
          margin-left: 10px;
          font-size: 15px;
+     }
+      @include respond-to(small) {
+         margin-left: 20px;
+         font-size: 16px;
+         margin-top: 5px;
      }
      
 }
@@ -220,6 +243,9 @@
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 1px;
+    @include respond-to(small) {
+         width: 95%;
+     }
 }
 .main__button--left {
     margin-left: 195px;

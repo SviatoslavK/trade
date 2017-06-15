@@ -195,6 +195,9 @@
     @include respond-to(tablet) {
          width: 200px;
      }
+     @include respond-to(small) {
+         font-size: 15px;
+     }
 }
 .dropdown__button--1 {
     margin-right: 24px;
