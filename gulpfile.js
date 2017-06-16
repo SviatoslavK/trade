@@ -15,7 +15,7 @@ var gulp         = require('gulp'),
     browserSync  = require("browser-sync"),
     notify       = require("gulp-notify"),
     plumber      = require('gulp-plumber'),
-    babel = require('gulp-babel'),
+    babel        = require('gulp-babel'),
     reload       = browserSync.reload;
 
 var path = {

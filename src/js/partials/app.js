@@ -24,3 +24,11 @@ let filterBlock = document.querySelector('.filter__dropdown'),
         
     })
 
+let toTopBtn = document.querySelector('.copyright__up')
+// Scroll to top
+const topFunction = () => {
+    document.body.scrollTop = 0;  
+    document.documentElement.scrollTop = 0;
+}
+toTopBtn.addEventListener('click', topFunction)
+
