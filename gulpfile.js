@@ -15,6 +15,7 @@ var gulp         = require('gulp'),
     browserSync  = require("browser-sync"),
     notify       = require("gulp-notify"),
     plumber      = require('gulp-plumber'),
+    babel = require('gulp-babel'),
     reload       = browserSync.reload;
 
 var path = {
@@ -63,11 +64,13 @@ gulp.task('html:build', function() {
         .pipe(notify("HTML Done!!!"))
         .pipe(reload({stream: true}));
 });
-
 gulp.task('js:build', function() {
     gulp.src(path.src.js)
         .pipe(rigger())
         .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
+        .pipe(babel({
+            presets: ['es2015']
+        }))
         .pipe(uglify())
         .pipe(gulp.dest(path.build.js))
         .pipe(notify("JS Done!!!"))
