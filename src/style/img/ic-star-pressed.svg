@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-star-pressed</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mockup-main-tags" transform="translate(-1042.000000, -2177.000000)" fill="#EABD08">
+            <g id="procurements" transform="translate(0.000000, 1723.000000)">
+                <g id="Group-8" transform="translate(1027.000000, 439.000000)">
+                    <path d="M25.0526316,31.4127717 L19.9986367,34.0668624 C19.017278,34.5822201 18.3739354,34.1135577 18.5610887,33.0235829 L19.5263158,27.4021286 L15.437548,23.4209926 C14.6436122,22.6479561 14.8910285,21.8919561 15.9866425,21.7329309 L21.6371806,20.9127717 L24.164178,15.7982037 C24.6548574,14.8050832 25.4511116,14.8065118 25.9410851,15.7982037 L28.4680826,20.9127717 L34.1186206,21.7329309 C35.215813,21.8921851 35.4605089,22.6490681 34.6677151,23.4209926 L30.5789474,27.4021286 L31.5441745,33.0235829 C31.7315973,34.1151279 31.0865735,34.5814787 30.1066265,34.0668624 L25.0526316,31.4127717 Z" id="ic-star-pressed"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

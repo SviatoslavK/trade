@@ -1,0 +1,155 @@
+@import "_variables";
+@import "_utils";
+
+.category {
+    height: 338px;
+    @include respond-to(tablet) {
+         height: 318px;
+     }
+     @include respond-to(mobile) {
+        height: 380px;
+     }
+     @include respond-to(small) {
+        height: 380px;
+     }
+}
+.category .container {
+    height: 100%;
+}
+.category__title {
+    padding-top: 78px;
+    font-size: 36px;
+    text-align: center;
+    // border-bottom: 1px dashed #000;
+    @include respond-to(tablet) {
+         font-size: 34px;
+     }
+     @include respond-to(mobile) {
+        padding-top: 48px;
+     }
+     @include respond-to(small) {
+        padding-top: 48px;
+        font-size: 34px;
+     }
+}
+
+.category__choose {
+    display: flex;
+    margin-top: 45px;
+    justify-content: space-between;
+    @include respond-to(mobile) {
+        flex-wrap: wrap;
+     }
+      @include respond-to(small) {
+        flex-wrap: wrap;
+     }
+}
+.choose__common {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    @include respond-to(tablet) {
+         font-size: 18px;
+         height: 80px;
+     }
+      @include respond-to(mobile) {
+        height: 80px;
+     }
+      @include respond-to(small) {
+        height: 80px;
+        font-size: 16px;
+     }
+}
+.choose__1 {
+    width: 165px;
+    background-image: url(../img/btn-category-1-normal.png);
+    background-position: center center;
+    background-size: cover;
+    @include respond-to(tablet) {
+         width: 15%;
+     }
+     @include respond-to(mobile) {
+        order: 3;
+        width: 32%;
+     }
+      @include respond-to(small) {
+        order: 3;
+        width: 32%;
+     }
+}
+.choose__2 {
+    width: 263px;
+    background-image: url(../img/btn-category-2-normal.png);
+    background-position: center center;
+    background-size: cover;
+    @include respond-to(tablet) {
+         width: 24%;
+     }
+     @include respond-to(mobile) {
+        order: 1;
+        width: 49%;
+        margin-bottom: 10px;
+     }
+     @include respond-to(small) {
+        order: 1;
+        width: 49%;
+        margin-bottom: 10px;
+     }
+}
+.choose__3 {
+    width: 165px;
+    background-image: url(../img/Rectangle.png);
+    background-position: center center;
+    background-size: cover;
+    @include respond-to(tablet) {
+         width: 15%;
+     }
+     @include respond-to(mobile) {
+        order: 4;
+        width: 32%;
+     }
+     @include respond-to(small) {
+        order: 4;
+        width: 32%;
+     }
+}
+.choose__4 {
+    width: 263px;
+    background-image: url(../img/btn-category-4-normal.png);
+    background-position: center center;
+    background-size: cover;
+    @include respond-to(tablet) {
+         width: 24%;
+     }
+     @include respond-to(mobile) {
+        order: 2;
+        width: 49%;
+     }
+     @include respond-to(small) {
+        order: 2;
+        width: 49%;
+     }
+}
+.choose__5 {
+    width: 165px;
+    background-image: url(../img/btn-more-normal.png);
+    background-position: center center;
+    background-size: cover;
+    color: #000;
+    @include respond-to(tablet) {
+         width: 15%;
+     }
+     @include respond-to(mobile) {
+        order: 5;
+        width: 32%;
+     }
+     @include respond-to(small) {
+        order: 5;
+        width: 32%;
+     }
+}
