@@ -68,10 +68,10 @@ gulp.task('js:build', function() {
     gulp.src(path.src.js)
         .pipe(rigger())
         .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
-        .pipe(babel({
-            presets: ['es2015']
-        }))
-        .pipe(uglify())
+        // .pipe(babel({
+            // presets: ['es2015']
+        // }))
+        // .pipe(uglify())
         .pipe(gulp.dest(path.build.js))
         .pipe(notify("JS Done!!!"))
         .pipe(reload({stream: true}));

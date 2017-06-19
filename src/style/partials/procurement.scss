@@ -162,6 +162,14 @@
         margin-left: auto;
      }
 }
+.procurement__button:hover {
+    cursor: pointer;
+    .procurement__button--star {
+        background-image: url(../img/ic-star-pressed.svg);
+    }
+}
+
+
 .procurement__button--star {
     height: 19px;
     width: 20px;
@@ -169,8 +177,8 @@
     margin-right: 12px;
     background-image: url(../img/ic-star-normal.svg);
 }
-.procurement__button--star:hover {
-    background-image: url(../img/ic-star-pressed.svg);
+.check-star {
+background-image: url(../img/ic-star-pressed.svg);
 }
 .procurements__breadcrumbs {
     width: 312px;
