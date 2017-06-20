@@ -20,7 +20,9 @@
     padding-top: 78px;
     font-size: 36px;
     text-align: center;
-    // border-bottom: 1px dashed #000;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-style: dotted;
     @include respond-to(tablet) {
          font-size: 34px;
      }

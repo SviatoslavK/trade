@@ -8,6 +8,7 @@
     font-size: 36px;
     margin-top: 78px;
     margin-bottom: 47px;
+    font-weight: 700;
     @include respond-to(tablet) {
          font-size: 34px;
      }
@@ -70,6 +71,7 @@
 .procurement__id {
     font-size: 24px;
     line-height: 23px;
+    font-weight: 700;
     @include respond-to(tablet) {
         font-size: 20px;
      }
@@ -86,6 +88,7 @@
 }
 .procurement__status {
     margin-top: auto;
+    font-weight: 500;
     @include respond-to(mobile) {
         margin-top: 15px;
      }
@@ -116,6 +119,7 @@
 .procurement__price {
     font-size: 24px;
     line-height: 23px;
+    font-weight: 700;
     @include respond-to(tablet) {
         font-size: 20px;
      }
@@ -199,6 +203,7 @@ background-image: url(../img/ic-star-pressed.svg);
 .breadcrumb:hover {
     color: #fff;
     background-color: #23B498;
+    border: 1px solid #23B498;
 }
 .breadcrumb--4 {
     width: 44px;

@@ -66,6 +66,7 @@
     background-color: #2EB398;
     border-radius: 3px;
     color: #fff;
+    font-weight: 700;
     @include respond-to(mobile) {
         height: 44px;
         margin-top: 10px;
@@ -190,7 +191,7 @@
   background-image: url(../img/checkbox-inactive.svg);
   background-position: center center;-webkit-background-size: cover;
   background-size: cover;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 [type="checkbox"]:checked + label:after {

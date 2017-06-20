@@ -139,6 +139,7 @@
 }
 .header__logo--text {
     font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -197,7 +198,7 @@
     font-size: 34px;
     text-align: center;
     padding-top: 123px;
-    font-weight: 300;
+    font-weight: 700;
     letter-spacing: 1px;
     line-height: 62px;
     @include respond-to(mobile) {
@@ -211,6 +212,7 @@
 }
 .main__subheader {
     padding-top: 0;
+    font-weight: 400;
 }
 .main__buttons {
     display: flex;
@@ -248,7 +250,7 @@
     border-radius: 5px;
     color: #fff;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 700;
     letter-spacing: 1px;
     @include respond-to(small) {
          width: 95%;

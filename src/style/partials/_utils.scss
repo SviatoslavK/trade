@@ -15,6 +15,8 @@
 * {
     transition: all 0.5s;
 }
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Source Sans Pro', sans-serif;
 // Utility classes
 .clearfix:after {
     content: "";
@@ -42,4 +44,7 @@
           padding-left: 2px;
           padding-right: 2px;
      }
+}
+.native_font {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
