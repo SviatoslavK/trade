@@ -85,14 +85,11 @@ chooseBtn.addEventListener('click', () => {
 let allLang = [...document.querySelectorAll('.lang__block')]
 allLang.map(btn => {
     btn.addEventListener('click', e => {
-        e.path
-            .map(el => {
-                if ([...el.classList].includes('lang__block')) {
-                    checkElementOnce(chooseBlock, 'div', el);
+        if(e.target.getAttribute('class').includes('lang__flag') || e.target.getAttribute('class').includes('lang__language')) {
+            checkElementOnce(chooseBlock, 'div', e.target.parentElement);
                     chooseBtn.removeAttribute('show');
                     chooseBlock.style.height = '20px';
                     chooseBlock.style.marginTop = '0';
-                }
-            })
+        }
     })
 })
