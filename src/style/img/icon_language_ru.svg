@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="20px" viewBox="0 0 28 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_language_ru</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="20" rx="2"></rect>
+    </defs>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mockup-main" transform="translate(-150.000000, -20.000000)">
+            <g id="navigation-bar" transform="translate(-6.000000, 12.000000)">
+                <g id="icon_language_ru" transform="translate(156.000000, 8.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#F5F5F5" stroke-width="0.5" x="0.25" y="0.25" width="27.5" height="19.5" rx="2"></rect>
+                    </g>
+                    <rect id="Rectangle-2" fill="#0C47B7" mask="url(#mask-2)" x="0" y="7" width="28" height="7"></rect>
+                    <rect id="Rectangle-2" fill="#E53B35" mask="url(#mask-2)" x="0" y="13" width="28" height="7"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
