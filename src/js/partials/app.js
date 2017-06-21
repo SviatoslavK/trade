@@ -38,7 +38,7 @@ toTopBtn.addEventListener('click', topFunction)
 let favoriteBtn = [...document.querySelectorAll('.procurement__button')]
 
 favoriteBtn.map(btn => {
-    btn.addEventListener('click', (e) => {
+    btn.addEventListener('click', e => {
         e.path
             .map(el => {
                 if ([...el.classList].includes('procurement__button')) {
@@ -75,7 +75,7 @@ chooseBtn.addEventListener('click', () => {
     if (!chooseBtn.hasAttribute('show')) {
         chooseBtn.setAttribute('show', '');
         chooseBlock.style.height = 'auto';
-        chooseBlock.style.marginTop = '80px';
+        chooseBlock.style.marginTop = '70px';
     } else {
         chooseBtn.removeAttribute('show');
         chooseBlock.style.height = '20px';
@@ -84,7 +84,7 @@ chooseBtn.addEventListener('click', () => {
 });
 let allLang = [...document.querySelectorAll('.lang__block')]
 allLang.map(btn => {
-    btn.addEventListener('click', (e) => {
+    btn.addEventListener('click', e => {
         e.path
             .map(el => {
                 if ([...el.classList].includes('lang__block')) {

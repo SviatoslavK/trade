@@ -252,6 +252,7 @@
     text-align: center;
     padding-top: 123px;
     font-weight: 700;
+    -moz-font-weight: 400;
     letter-spacing: 1px;
     line-height: 62px;
     @include respond-to(mobile) {
