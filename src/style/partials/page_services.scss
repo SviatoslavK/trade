@@ -1,0 +1,109 @@
+.page_services {
+    padding-bottom: 50px;
+}
+.page_services--title {
+    font-size: 36px;
+    margin-top: 78px;
+    margin-bottom: 47px;
+    font-weight: 700;
+    @include respond-to(tablet) {
+         font-size: 34px;
+    }
+    @include respond-to(mobile) {
+        font-size: 30px;
+        text-align: center;
+    }
+    @include respond-to(small) {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+.page_services--subtitle {
+    font-size: 26px;
+    margin-top: 28px;
+    margin-bottom: 17px;
+    font-weight: 700;
+    @include respond-to(tablet) {
+         font-size: 24px;
+    }
+    @include respond-to(mobile) {
+        font-size: 20px;
+        text-align: center;
+    }
+    @include respond-to(small) {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+.mail__to {
+    color: #3498db;
+}
+.icons__block {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+.icons__card {
+    display: flex;
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 50px;
+    margin-bottom: 100px;
+    @include respond-to(tablet) {
+        padding-right: 25px;
+    }
+    @include respond-to(mobile) {
+        width: 100%;
+        margin-bottom: 50px;
+        padding-right: 0;
+    }
+    @include respond-to(small) {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 50px;
+        padding-right: 0;
+    }
+}
+.icons__card--icon {
+    height: 100px;
+    min-width: 100px;
+    width: 100px;
+    text-align: center;
+    color: #33495f;
+    @include respond-to(mobile) {
+
+    }
+    @include respond-to(small) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+}
+.icons__card--text {
+    padding-left: 20px;
+    position: relative;
+    @include respond-to(mobile) {
+
+    }
+    @include respond-to(small) {
+        // text-align: center;
+    }
+}
+.icons__card--title {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.icons__card--subtitle {
+    font-size: 16px;
+    line-height: 22px;
+    @include respond-to(tablet) {
+        font-size: 14px;
+    }
+}
+.icons__card--develop {
+    position: absolute;
+    bottom: -30px;
+    font-weight: 300;
+    line-height: 23px;
+    color: #9d9d9d;
+}

@@ -29,20 +29,24 @@
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transform: scale(.75);
      @include respond-to(tablet) {
          width: 768px;
          padding-left: 10px;
          padding-right: 10px;
+         transform: scale(1);
      }
      @include respond-to(mobile) {
          width: 480px;
          padding-left: 2px;
          padding-right: 2px;
+         transform: scale(1);
      }
       @include respond-to(small) {
           width: 320px;
           padding-left: 2px;
           padding-right: 2px;
+          transform: scale(1);
      }
 }
 .native_font {

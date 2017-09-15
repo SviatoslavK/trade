@@ -1,0 +1,30 @@
+.page_contacts {
+    padding-bottom: 50px;
+}
+.page_contacts--title {
+    font-size: 36px;
+    margin-top: 78px;
+    margin-bottom: 47px;
+    font-weight: 700;
+    @include respond-to(tablet) {
+         font-size: 34px;
+    }
+    @include respond-to(mobile) {
+        font-size: 30px;
+        text-align: center;
+    }
+    @include respond-to(small) {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+.page_contacts--contacts {
+    & .contacts__item {
+        @include respond-to(mobile) {
+            font-size: 14px;
+        }
+        @include respond-to(small) {
+            font-size: 16px;
+        }
+    }
+}
