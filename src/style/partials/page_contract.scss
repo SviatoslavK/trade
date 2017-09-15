@@ -1,0 +1,101 @@
+.page_contract {
+    padding-bottom: 50px;
+}
+.page_contract--tabs {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+.page_contract--tabs:after {
+	content: "";
+	clear: both;
+	display: block;
+	height: 350px;
+}
+.page_contract--tabs li {
+	float: left;
+}
+.page_contract--tabs li > input {
+	display: none;
+}
+.download__btn {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 50px;
+    border-radius: 10px;
+    background-color: #23b498;
+    color: #fff;
+    display: none;
+    @include respond-to(small) {
+        bottom: -25px;
+        top: auto;
+        right: 70px;
+    }
+}
+.page_contract--tabs li > label {
+	display: inline-block;
+	border: 1px solid #f1f0ee;
+    border-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+    min-height: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    transition: all 0s;
+    font-size: 18px;
+    font-weight: 700;
+    @include respond-to(mobile) {
+        font-size: 16px;
+        width: 145px;
+        line-height: 30px;
+    }
+    @include respond-to(small) {
+        font-size: 16px;
+        width: 158px;
+        line-height: 30px;
+    }
+}
+.page_contract--tabs li:last-child > label {
+	border-right-width: 1px;
+}
+.page_contract--tabs .tab-content {
+	display: none;
+	position: absolute;
+	left: 0;
+	padding: 20px;
+	border: 1px solid #f1f0ee;
+	height: 310px;
+	overflow-y: auto;
+    font-size: 16px;
+    line-height: 24px;
+}
+.tab-content--title {
+    font-weight: 700;
+}
+.page_contract--tabs li > input:checked + label {
+	background-color: #fff;
+    border-bottom: 1px solid #fff;
+    margin-bottom: -1px;
+    z-index: 100;
+    position: relative;
+}
+.page_contract--tabs li > input:checked ~ .tab-content {
+	display: block;
+}
+.page_contract--tabs li > input:checked ~ .download__btn {
+	display: block;
+}
+.tab__header--1 {
+    border-right: 0;
+}
