@@ -187,8 +187,11 @@
 .navbar {
     height: 71px;
     background-color: #fff;
+    @include respond-to(mobile) {
+        height: 100px;
+     }
     @include respond-to(small) {
-         height: 90px;
+         height: 120px;
      }
 }
 .header__logo--text {
@@ -217,17 +220,20 @@
      }
      @include respond-to(mobile) {
          margin-left: 0;
-         
+         flex-wrap: wrap;
+         justify-content: center;
      }
 }
 .nav__item {
     margin-left: 41px;
     @include respond-to(tablet) {
-         margin-left: 30px;
+         margin-left: 10px;
+         font-size: 14px
      }
      @include respond-to(mobile) {
          margin-left: 10px;
-         font-size: 15px;
+         font-size: 16px;
+         line-height: 25px;
      }
       @include respond-to(small) {
          margin-left: 20px;
