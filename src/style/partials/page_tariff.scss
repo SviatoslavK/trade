@@ -4,6 +4,7 @@
 .tariff__table {
     display: flex;
     border: 1px solid #f1f0ee;
+    border-right: 0;
     height: auto;
     @include respond-to(mobile) {
         font-size: 12px;
@@ -91,4 +92,9 @@
     &:last-child {
         border-bottom: 0;
     }
+}
+.tariff__from {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 18px;
 }

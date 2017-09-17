@@ -39,7 +39,7 @@
 }
 .page_contract--tabs li > label {
 	display: inline-block;
-	border: 1px solid #f1f0ee;
+	border: 1px solid #9d9d9d;
     border-bottom: 0;
     padding-left: 15px;
     padding-right: 15px;
@@ -74,7 +74,7 @@
 	position: absolute;
 	left: 0;
 	padding: 20px;
-	border: 1px solid #f1f0ee;
+	border: 1px solid #9d9d9d;
 	height: 310px;
 	overflow-y: auto;
     font-size: 16px;
@@ -97,5 +97,5 @@
 	display: block;
 }
 .tab__header--1 {
-    border-right: 0;
+    border-right: 0 !important;
 }

@@ -78,10 +78,14 @@ chooseBtn.addEventListener('click', () => {
         chooseBtn.setAttribute('show', '');
         chooseBlock.style.height = 'auto';
         chooseBlock.style.marginTop = '70px';
+        // chooseBlock.style.paddingLeft = '20px';
+        chooseBlock.style.boxShadow = `-1px 2px 6px -2px rgba(0,0,0,0.5)`
     } else {
         chooseBtn.removeAttribute('show');
         chooseBlock.style.height = '20px';
         chooseBlock.style.marginTop = '0';
+        chooseBlock.style.boxShadow = `none`;
+        // chooseBlock.style.paddingLeft = '0px';
     }
 });
 let allLang = [...document.querySelectorAll('.lang__block')]
