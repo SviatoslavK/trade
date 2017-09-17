@@ -1,0 +1,61 @@
+.page_procurement {
+    padding-bottom: 50px;
+}
+.page_procurement .inputfield__input{
+    margin-bottom: 20px;
+}
+.filter__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include respond-to(mobile) {
+       margin-top: 20px;
+    }
+    @include respond-to(small) {
+       margin-top: 20px;
+    }
+}
+.filter__block--common {
+    width: 30%;
+    @include respond-to(mobile) {
+        width: 48%;
+    }
+    @include respond-to(small) {
+        width: 100%;
+    }
+}
+.filter__block--block3 {
+    @include respond-to(mobile) {
+        width: 100%;
+    }
+}
+.filter__block .select__input,
+.filter__block .dropdown__input {
+    width: 100%;
+}
+.filter__block--block3 .dropdown__button--1{
+    margin-right: 0;
+    margin-left: auto;
+    @include respond-to(mobile) {
+        width: 100%;
+    }
+    @include respond-to(small) {
+        width: 100%;
+    }
+}
+.filter__block .dropdown__checkblock {
+    height: 48px;
+    margin-bottom: 20px;
+    @include respond-to(mobile) {
+        height: 44px;
+        margin-bottom: 15px;
+    }
+    @include respond-to(small) {
+        height: 44px;
+        margin-bottom: 15px;
+    }
+}
+
+#procurements__block {
+    margin-top: 50px;
+}
